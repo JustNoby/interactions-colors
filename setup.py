@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="interactions.ext.colors",
+    name="interactions-colors",
     version="0.1",
     description="Add a color function to Embed",
     long_description=long_description,
