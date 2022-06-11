@@ -14,5 +14,3 @@ class interactionsColor(Extension):
 
 def setup() -> Optional[Extension]:
     return interactionsColor
-
-print(interactionsColor.green())
