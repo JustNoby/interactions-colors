@@ -4,7 +4,7 @@ from typing_extensions import Self
 import random
 
 
-class interactionsColor(Extension):
+class Color(Extension):
     """
     A Class Color
     """
@@ -148,4 +148,4 @@ class interactionsColor(Extension):
         return 2303786
 
 def setup() -> Optional[Extension]:
-    return interactionsColor
+    return Color
