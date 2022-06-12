@@ -11,12 +11,20 @@ class Color(Extension):
 
     @classmethod
     def random(cls) -> Self:
+        """Returns random color"""
         return int(''.join([random.choice('ABCDEF0123456789') for i in range(6)]), 16)
+
+    @classmethod
+    def from_hex_code(cls, hexcode: str) -> Self:
+        """Returns color from hexcode"""
+        hexcode.replace('0x', '')
+        hexcode.replace('#', '')
+        return int(hexcode, 16)
 
     @classmethod
     def default(cls) -> Self:
         """Returns defualt color"""
-        return 0
+        return 2303786
 
     @classmethod
     def aqua(cls) -> Self:
@@ -145,7 +153,7 @@ class Color(Extension):
     @classmethod
     def black(cls) -> Self:
         """Returns a black color"""
-        return 2303786
+        return 0
 
 def setup() -> Optional[Extension]:
     return Color
